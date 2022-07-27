@@ -33,3 +33,68 @@
     }
   }
 }
+.chart-container {
+  width: 90%;
+  .chart-bar {
+    margin: 1rem 0;
+    display: flex;
+    div {
+      height: 8px;
+    }
+    div:nth-child(1) {
+      background-color: $yellow-color;
+      width: 40%;
+    }
+    div:nth-child(2) {
+      background-color: $purple-color;
+      width: 25%;
+    }
+    div:nth-child(3) {
+      background-color: $blue-color;
+      width: 25%;
+    }
+    div:nth-child(4) {
+      background-color: $medium-gray;
+      width: 10%;
+    }
+  }
+  .chart-badge {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    span {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+      div {
+        width: 10px;
+        height: 10px;
+      }
+      h4 {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        color: $dark-gray;
+      }
+    }
+    span:nth-child(1) {
+      div {
+        background-color: $yellow-color;
+      }
+    }
+    span:nth-child(2) {
+      div {
+        background-color: $purple-color;
+      }
+    }
+    span:nth-child(3) {
+      div {
+        background-color: $blue-color;
+      }
+    }
+    span:nth-child(4) {
+      div {
+        background-color: $medium-gray;
+      }
+    }
+  }
+}
