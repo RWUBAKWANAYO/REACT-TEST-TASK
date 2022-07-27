@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import './assets/styles/colors.scss';
+
+*,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+  width: 100%;
+  background-color: $light-gray;
+}
+.App{
+  width: 90%;
+  padding: 5%;
+  background-color: $white;
+  margin: 0 auto;
+}
