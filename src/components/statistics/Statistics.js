@@ -1,7 +1,11 @@
 import React from 'react';
+import './Statistics.scss'
+import Accuracy from './Accuracy';
 
 const Statistics = () => (
-  <div>Statistics</div>
+  <div>
+    <Accuracy/>
+  </div>
 );
 
 export default Statistics;

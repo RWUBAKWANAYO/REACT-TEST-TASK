@@ -1,19 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
-@import './assets/styles/colors.scss';
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import "./assets/styles/colors.scss";
 
-*,body{
+*,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-body{
+body {
   width: 100%;
   background-color: $light-gray;
 }
-.App{
-  width: 90%;
+.App {
+  width: calc(100% - 100px);
   padding: 5%;
   background-color: $white;
-  margin: 0 auto;
+  margin: 50px auto;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: grid;
+  row-gap: 50px;
 }
