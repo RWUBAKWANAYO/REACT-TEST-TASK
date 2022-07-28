@@ -1,24 +1,24 @@
 import React from "react";
 import SearchIcon from "./SearchIcon";
-const Searches = () => {
+const Searches = ({current, previous}) => {
   return (
     <div className="searches-container">
       <div className="first-wrapper">
         <SearchIcon />
         <div>
-          <span className="wrapper-start">
+          <span className="wrapper-start wrapper-with-badge">
             <h2>Searches</h2>
-            <span className="percent-badge green-badge">-13%</span>
+            <span className="percent-badge green-badge">+5%</span>
           </span>
 
           <span className="wrapper-middle">
-            <h3>29 380</h3>
-            <p>Yesterday</p>
+            <h3>{current.value}</h3>
+            <p>{current.name}</p>
           </span>
 
           <span className="wrapper-end">
-            <h3>27 985</h3>
-            <p>Last friday</p>
+            <h3>{previous.value}</h3>
+            <p>{previous.name}</p>
           </span>
         </div>
       </div>

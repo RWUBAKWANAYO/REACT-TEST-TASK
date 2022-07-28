@@ -6,8 +6,8 @@ export default function SearchIcon() {
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+     clipRule ="evenodd"
       d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z"
       fill="#2196F3"
     />
@@ -19,12 +19,12 @@ export default function SearchIcon() {
       d="M40 14C43.3137 14 46 11.3137 46 8C46 4.68629 43.3137 2 40 2C36.6863 2 34 4.68629 34 8C34 11.3137 36.6863 14 40 14Z"
       fill="#8BC34A"
       stroke="white"
-      stroke-width="2"
+      strokeWidth="2"
     />
     <path
       opacity="0.220392"
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M28.2459 53.1704C27.0191 53.3259 25.7689 53.406 24.5 53.406C22.8288 53.406 21.19 53.267 19.5946 53L22.8462 116.406H19L23.5 121.406L28 116.406H24.1923L28.2459 53.1704Z"
       fill="url(#paint0_linear_5424_3)"
     />
@@ -37,8 +37,8 @@ export default function SearchIcon() {
         y2="53"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#2196F3" />
-        <stop offset="1" stop-color="#A9D9FF" />
+        <stop stopColor="#2196F3" />
+        <stop offset="1" stopColor="#A9D9FF" />
       </linearGradient>
     </defs>
   </svg>;

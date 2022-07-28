@@ -1,7 +1,7 @@
 import React from 'react'
 import ClickIcon from './ClickIcon'
 
-const Clicks = () => {
+const Clicks = ({current, previous,ctr}) => {
   return (
     <div className="searches-container">
     <div className="first-wrapper">
@@ -13,21 +13,21 @@ const Clicks = () => {
         </span>
 
         <span className="wrapper-middle">
-          <h3>29 380</h3>
-          <p>Yesterday</p>
+          <h3>{current.value}</h3>
+          <p>{current.name}</p>
         </span>
 
         <span className="wrapper-end">
-          <h3>27 985</h3>
-          <p>Last friday</p>
+          <h3>{previous.value}</h3>
+          <p>{previous.name}</p>
         </span>
       </div>
     </div>
     <div className="second-wrapper wrapper-start">
-      <h2 style={{color:"#FF6A67"}}>CTR: 0,04%</h2>
-      <p>You get 100% traffic on mobile and desktop devices.</p>
+      <h2 style={{color:"#FF6A67"}}>CTR: {ctr.toFixed(2)}%</h2>
+      <p>Conversion from searches  to clicks on all devices.</p>
       <h5>
-        <span>Help:</span> Searches, Pessimisation
+        <span>Help:</span> CTR, Cliks
       </h5>
     </div>
   </div>

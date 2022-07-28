@@ -8,9 +8,14 @@
     margin: 1.5rem 0;
     background-color: #EFF1F4;
   }
-  .searches-container {
-    display: flex;
 
+  .searches-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .wrapper-with-badge{
+      display: flex;
+      align-items: center;
+    }
     .wrapper-start {
       color: $dark-gray;
       h2 {
@@ -43,9 +48,10 @@
     }
 
     .first-wrapper {
-      min-width: 450px;
+      min-width: 270px;
       display: flex;
-      column-gap: 2rem;
+      column-gap: 1.5rem;
+      height: fit-content;
 
       span {
         display: flex;

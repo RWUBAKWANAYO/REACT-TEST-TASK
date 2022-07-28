@@ -43,19 +43,15 @@
     }
     div:nth-child(1) {
       background-color: $yellow-color;
-      width: 40%;
     }
     div:nth-child(2) {
       background-color: $purple-color;
-      width: 25%;
     }
     div:nth-child(3) {
       background-color: $blue-color;
-      width: 25%;
     }
     div:nth-child(4) {
       background-color: $medium-gray;
-      width: 10%;
     }
   }
   .chart-badge {
@@ -97,4 +93,9 @@
       }
     }
   }
+}
+.error-message{
+  font-size: 22px;
+  font-weight: 600;
+  color: $medium-gray;
 }

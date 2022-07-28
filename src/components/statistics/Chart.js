@@ -1,22 +1,27 @@
-import React from 'react'
+import React from "react";
+import { v4 as uuidv4 } from 'uuid';
 
-const Chart = () => {
-  return (
-    <div className='chart-container'>
-      <div className='chart-bar'>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+const Chart = ({ errors, total_count }) =>(
+  total_count > 0 ? (
+    <div className="chart-container">
+      <div className="chart-bar">
+        {errors.map((el) => (
+          <div key={uuidv4()} style={{ width: `${(el.count * 100) / total_count}%` }}></div>
+        ))}
       </div>
-      <div className='chart-badge'>
-        <span><div></div><h4>Error 500: 1 256</h4></span>
-        <span><div></div><h4>Error 501: 800</h4></span>
-        <span><div></div><h4>Error 502: 650</h4></span>
-        <span><div></div><h4>Other: 330</h4></span>
+      <div  className="chart-badge">
+        {errors.map((el) => (
+          <span key={uuidv4()}>
+            <div></div>
+            <h4>
+              Error {el.code || "There is no code"}: {el.count}
+            </h4>
+          </span>
+        ))}
       </div>
     </div>
-  )
-}
+  ) : (
+      <h1 className="error-message">There's no chart !</h1>
+  ));
 
-export default Chart
+export default Chart;

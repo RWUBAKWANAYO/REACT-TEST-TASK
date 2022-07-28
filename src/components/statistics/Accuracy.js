@@ -1,29 +1,29 @@
 import React from "react";
 
-const Accuracy = () => {
+const Accuracy = ({error_percent, zeroes,timeout}) => {
   return (
     <div className="accuracy-container">
       <ul>
         <li>
           <span>
             <div></div>
-            <h3>Errors: 0,12% </h3>
+            <h3>Errors: {error_percent.toFixed(2)}%</h3>
           </span>
-          <p>Average: 0,11%</p>
+          <p>Average: None</p>
         </li>
         <li>
           <span>
             <div></div>
-            <h3>Zeroes: 5,12% </h3>
+            <h3>Zeroes: {zeroes.toFixed(2)}%</h3>
           </span>
-          <p>Average: 0,11%</p>
+          <p>Average: None</p>
         </li>
         <li>
           <span>
             <div></div>
-            <h3>Timeouts: 0,12% </h3>
+            <h3>Timeouts: {timeout.toFixed(2)}%</h3>
           </span>
-          <p>Average: 0,11%</p>
+          <p>Average: None</p>
         </li>
       </ul>
     </div>
