@@ -1,0 +1,99 @@
+@import "../../assets/styles/colors.scss";
+.content-container {
+  width: 90%;
+  hr{
+    border: none;
+    height: 1px;
+    width: 100%;
+    margin: 1.5rem 0;
+    background-color: #EFF1F4;
+  }
+
+  .searches-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .wrapper-with-badge{
+      display: flex;
+      align-items: center;
+    }
+    .wrapper-start {
+      color: $dark-gray;
+      h2 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+    }
+    .wrapper-middle,
+    .wrapper-end {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+      h3 {
+        font-size: 20px;
+        font-weight: 400;
+      }
+      p {
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+    .wrapper-middle {
+      color: $dark-gray;
+      margin-bottom: 0.5rem;
+    }
+
+    .wrapper-end {
+      color: $medium-gray;
+    }
+
+    .first-wrapper {
+      min-width: 270px;
+      display: flex;
+      column-gap: 1.5rem;
+      height: fit-content;
+
+      span {
+        display: flex;
+        align-items: center;
+      }
+      .percent-badge {
+        width: 37px;
+        height: 18px;
+        margin-left: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .green-badge{
+        background: $green-color;
+      }
+      .red-badge{
+        background: $red-color;
+      }
+      svg {
+        width: 48px;
+      }
+    }
+    .second-wrapper {
+      p,
+      h5 {
+        font-size: 12px;
+        font-weight: 400;
+      }
+      p {
+        color: $medium-gray;
+      }
+      h5 {
+        color: $blue-color;
+        span {
+          color: $dark-gray;
+        }
+      }
+    }
+  }
+}

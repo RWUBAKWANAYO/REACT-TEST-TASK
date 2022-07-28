@@ -1,0 +1,40 @@
+
+@import '../..//assets/styles/colors.scss';
+
+.header-container{
+h1{
+  font-size: 22px;
+  font-weight:600 ;
+  margin-bottom: 1rem;
+  color: $dark-gray;
+}
+div{
+  overflow: hidden;
+  button{
+    outline: none;
+    border: none;
+    background-color: $white;
+    border-top: 1px solid $lighter-gray;
+    border-right: 1px solid $lighter-gray;
+    border-bottom: 1px solid $lighter-gray;
+    width: 104px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+
+  }
+  button:first-child{
+    border-radius: 5px 0 0 5px;
+    border-left: 1px solid $lighter-gray;
+  }
+  button:last-child{
+    border-radius:  0 5px 5px 0;
+  }
+  button:hover, button:focus{
+    background-color: $blue-color;
+    color: $white;
+    transition: 0.3s ease-in-out;
+  }
+}
+}
